@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="container ">
+
+    <p class="bar arn">dsfsfdsfdsdsgdsfds</p>
+
+    <!-- <br>
+
+    <div class="rounded-full h-20 w-20 bg-violet-200 hover:bg-yellow-300"></div>
+
+    <br>
+
+    <div class="w-20 h-5 bg-yellow-500"></div>
+
+    <br>
+
+    <p class="text-md"> The quick brown fox jumps over the lazy dog</p>
+
+    <br>
+
+    <div class="bar w-full h-20"></div> -->
+
+    <br>
+
+        <!-- Mobile Responsive Using Tailwind -->
+
+    
+    <!-- Breakpoint prefix	Minimum width	CSS\
+    xxs 320px   @media (min-width: 320px) - this is a customize breakpoint   
+    xs  480px   @media (min-width: 480px) - this is a customize breakpoint
+    sm	640px	@media (min-width: 640px) { ... }
+    md	768px	@media (min-width: 768px) { ... }
+    lg	1024px	@media (min-width: 1024px) { ... }
+    xl	1280px	@media (min-width: 1280px) { ... }
+    2xl	1535px	@media (min-width: 1536px) { ... } -->
+
+
+ 
+
+    <div class="w-52 h-20 bg-blue-500 xxs:max-xs:hidden 
+    xs:max-sm:bg-green-500  sm:bg-yellow-500 md:bg-red-500 
+    lg:bg-violet-500 xl:max-2xl:bg-orange-500  ">
+
+
+    </div>
+
+    <br>
+
+    <section class="grid gap-8 xxs:max-xs:bg-red-500 xs:max-sm:hidden md:grid-cols-2 md:items-center md:text-left text-center sm:max-xl:bg-blue-500 " >
+        <div>
+            <img src="https://img.freepik.com/free-photo/beautiful-tropical-beach-sea_74190-6762.jpg?t=st=1708655574~exp=1708659174~hmac=1a018ea1dac49d91e5ac79d583eb3ee6b895353436219b77ba624fd03effe9de&w=1380" alt=""
+            class="w-full rounded-lg px-7 py-7">
+        </div>
+
+        <div>
+            <h1 class="mb-2 text-4xl font-medium ">Headline</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, ut illum reiciendis quae tempora dolorem ipsa expedita rem ex nihil quo nemo? Natus harum est molestias incidunt dolor, eius accusamus.</p>
+        </div>
+    </section>
+    
+    <br>
+
+
+ <div class="flex justify-center items-center">
+
+    <div class="flex flex-col justify-center items-center h-80 w-80 bg-blue-500">
+
+
+        <div class="h-10 w-2 bg-black px-8 py-8 "></div>
+        
+        <br>
+        
+        <div class="h-20 w-20 bg-black relative">
+            <div class="h-5 w-5 bg-green-300 absolute inset-x-10 top-9"></div> 
+        </div>
+
+
+    </div>
+ </div>   
+
+
+ <br>
+
+    <!-- py-4 px-4 -->
+
+
+    <!-- Using Odd and Even -->
+    <table class="min-w-full bg-white border border-gray-300">
+        <thead>
+            <tr>
+                <th class="py-2 px-4 border-b">Name</th>
+                <th class="py-2 px-4 border-b">Title</th>
+                <th class="py-2 px-4 border-b">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="even:bg-blue-500 odd:bg-red-500">
+                <td class="py-2 px-4 border-b">Jane Cooper</td>
+                <td class="py-2 px-4 border-b">Regional Paradigm Technician</td>
+                <td class="py-2 px-4 border-b">jane.cooper@example.com</td>
+            </tr>
+            <tr class="even:bg-blue-500 odd:bg-red-500"">
+                <td class="py-2 px-4 border-b">Cody Fisher</td>
+                <td class="py-2 px-4 border-b">Product Directives Officer</td>
+                <td class="py-2 px-4 border-b">cody.fisher@example.com</td>
+            </tr>
+            <tr class="even:bg-blue-500 odd:bg-red-500"">
+                <td class="py-2 px-4 border-b">Cody Fisher</td>
+                <td class="py-2 px-4 border-b">Product Directives Officer</td>
+                <td class="py-2 px-4 border-b">cody.fisher@example.com</td>
+            </tr>
+            <tr class="even:bg-blue-500 odd:bg-red-500"">
+                <td class="py-2 px-4 border-b">Cody Fisher</td>
+                <td class="py-2 px-4 border-b">Product Directives Officer</td>
+                <td class="py-2 px-4 border-b">cody.fisher@example.com</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <br> 
+
+    <ul class="first-hover:bg-yellow-500 ">
+        <li class="even:bg-blue-500 odd:bg-red-500">Test</li>
+        <li class="even:bg-blue-500 odd:bg-red-500">Test</li>
+        <li class="even:bg-blue-500 odd:bg-red-500">Test</li>
+    </ul>
+    
+    <br> 
+
+    <!-- This is using Parent Child Selector  -->
+    <!-- class="[&>*:first-child]:bg-red-200 [&>*:last-child]:bg-yellow-100 " -->
+
+    <!-- Ctrl + D to select the same value -->
+    <br>
+
+    <!-- This is using Parent to all Children -->
+    <ul class="[&>*]:bg-teal-300" >
+        <li class="w-20 h-5 ">Test</li>
+        <li class="w-20 h-5 ">Test</li>
+        <li class="w-20 h-5 ">Test</li>
+    </ul>
+    
+    <br>
+
+    <!-- This is using Parent to 
+        a specific children / Only child-->    
+    <!-- [&>*:nth-child(0)] start with 1 -->
+    <ul class="[&>*:nth-child(1)]:bg-blue-300 
+                 [&>*:nth-child(3)]:bg-yellow-300"> 
+        <li class="w-20 h-5 ">Test</li>
+        <li class="w-20 h-5 ">Test</li>
+        <li class="w-20 h-5 ">Test</li>
+    </ul>
+
+    <br>
+
+        <!-- This is using Parent exclusive 
+             for first child and last child -->
+    <ul class="[&>*:first-child]:bg-blue-200 
+               [&>*:last-child]:bg-violet-300" >
+        <li class="w-20 h-5 ">Test</li>
+        <li class="w-20 h-5 ">Test</li>
+    </ul>
+
+
+    <br>
+
+    <!-- Nested from Parent to child elements -->
+    <div class="[&>div]:pb-3">
+        <div>
+          <div>A-1</div>
+          <div>A-2</div>
+          <div>A-3</div>
+        </div>
+        <div>
+          <div>B-1</div>
+          <div>B-2</div>
+          <div>B-3</div>
+        </div>
+        <div>
+          <div>C-1</div>
+          <div>C-2</div>
+          <div class="bg-red-500 hover:bg-yellow-200 ">C-3</div>
+        </div>
+      </div>
+      <br>
+
+      <!-- [&:has(p)]:bg-orange-500 -->
+      <div class="[&>*:nth-child(1)]:bg-red-300">
+       
+            <p class="h-5 w-full"></p>
+            <h2>dfsf</h2>
+          
+      </div>
+
+
+      <br>
+    <!-- Using First Child and Last Child -->
+    <div class="flex flex-col justify-center items-center">
+        <div class="w-full h-5 bg-blue-500"></div>
+        <div class="w-full h-5 bg-red-500"></div>
+        <div class="w-full h-5 bg-blue-500"></div>
+    </div>
+
+    <br>
+
+
+
+
+
+    <!-- Advantages of Tailwind CSS -->
+    <div class="flex flex-row justify-center pl-10">
+
+        <div class="group grid place-items-center 
+                    h-20 w-20 bg-blue-500 hover:bg-purple-400">
+
+            <div class="h-5 w-5 bg-black group-hover:bg-red-600"></div>
+            
+            <div class="h-5 w-5 bg-black group-hover:bg-blue-600"></div>
+        
+        </div>
+
+
+        <!-- <div>
+            <div class="animate-spin">↺</div>
+            <div class="animate-ping">LIKE</div>
+            <div class="animate-pulse">Subscribe</div>
+            <div class="animate-bounce">Hit the 🔔</div>
+        </div> -->
+    </div>
+
+    <div class="grid grid-cols-2 gap-10 p-5 xs:grid-cols-4 sm:grid-cols-3 lg:grid-cols-2">
+        <div class="w-1/2 aspect-video bg-purple-400"></div>
+        <div class="w-1/2 aspect-video bg-purple-400"></div>
+        <div class="w-1/2 aspect-video bg-purple-400"></div>
+        <div class="w-1/2 aspect-video bg-purple-400"></div>
+        <div class="w-1/2 aspect-video bg-purple-400"></div>
+        <div class="w-1/2 aspect-video bg-purple-400"></div>
+        <div class="w-1/2 aspect-video bg-purple-400"></div>
+    </div>
+    
+</body>
+
+</html>

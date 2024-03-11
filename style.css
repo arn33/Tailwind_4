@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+.bar{
+   @apply text-blue-500 font-bold bg-green-500;
+}
+
+.arn{
+   @apply text-red-500;
+}
+  } 
